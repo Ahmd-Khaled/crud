@@ -13,6 +13,11 @@ const UsersList = () => {
     return (
         <div className='users'>
             <div className='usersContainer'>
+                <div className='githubImage'>
+                    <a href='https://github.com/Ahmd-Khaled/crud' className='github' target='_blank' rel="noreferrer">
+                        <img className='githubIcon' src={process.env.PUBLIC_URL + '/imgs/github.svg'} alt='Github' />
+                    </a>
+                </div>
                 <div className='usersList'>
                     {persons.map((item, index) => (
                         <User key={item.id} item={item} deleteUser={deleteUser} />
