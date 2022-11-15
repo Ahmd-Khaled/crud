@@ -1,0 +1,27 @@
+@import '../../index.scss';
+@import '../../sass/_mixins.scss';
+
+.users {
+    // @include flexCenter;
+    // width: 50%;
+    // height: 100%;
+    // margin: 10px auto;
+    // padding: 30px;
+    background-color: #f0f0f0;
+    width: fit-content;
+    min-width: 100px;
+    min-height: 50px;
+    padding: 30px;
+    @include borderRadius(30px);
+    border: 2px solid $sky1;
+    margin: 30px auto;
+    .usersContainer {
+        .usersList {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            
+        }
+    }
+}

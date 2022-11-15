@@ -1,0 +1,39 @@
+$white: #FFFFFF;
+$black: #000000;
+$black-light: #222222;
+$gray: rgba(0,0,0, 0.04);
+$yellow: #ffc455;
+$red1: #ff5352;
+$red2: #ff517e;
+$sky1: #00c8da;
+$blue-light: #0d6efd;
+$blue-dark: #0a58ca;
+$green1: #00da54;
+$violet1: #556d91;
+$Josefin_font: 'Josefin Sans', sans-serif;
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+}
+
+img {
+  object-fit: cover;
+}

@@ -1,0 +1,62 @@
+@import '../../index.scss';
+@import '../../sass/_mixins.scss';
+
+.user {
+    border: 2px solid $white;
+    // max-width: 500px;
+    padding: 20px;
+    @include borderRadius(20px);
+    .userContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        @include breakpoints(sm) {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .userData {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            .item {
+                background-color: $yellow;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                span {
+                    display: block;
+                    padding: 6px;
+                }
+                
+                span:nth-child(1) {
+                    color: $violet1;
+                    width: 80px;
+                    border-right: 1px solid $white;
+                }
+                span:nth-child(2) {
+                    color: $blue-dark;
+                }
+            }
+        }
+        .btns{
+            .delBtn {
+                font-family: $Josefin_font;
+                border: none;
+                outline: none;
+                background-color: $red1;
+                color: $white;
+                padding: 10px 20px;
+                font-size: 20px;
+                @include borderRadius(10px);
+                cursor: pointer;
+                opacity: 1;
+                @include transition(0.3s);
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
