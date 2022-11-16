@@ -4,8 +4,8 @@
 .users {
     background-color: #f0f0f0;
     width: fit-content;
-    min-width: 100px;
-    min-height: 50px;
+    min-width: 300px;
+    min-height: 150px;
     padding: 30px;
     @include borderRadius(30px);
     border: 2px solid $sky1;
@@ -34,6 +34,10 @@
             align-items: center;
             gap: 16px;
             
+            .errTxt {
+                color: $red2;
+                font-family: $Josefin_font;
+            }
         }
     }
 }

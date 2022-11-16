@@ -22,6 +22,7 @@ const UsersList = () => {
                     {persons.map((item, index) => (
                         <User key={item.id} item={item} deleteUser={deleteUser} />
                     ))}
+                    {persons.length < 1 && <p className='errTxt'>There is no users.</p>}
                 </div>
             </div>
         </div>
