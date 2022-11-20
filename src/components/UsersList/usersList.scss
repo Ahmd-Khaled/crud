@@ -4,16 +4,23 @@
 .users {
     background-color: #f0f0f0;
     width: fit-content;
-    min-width: 300px;
+    min-width: 400px;
+    @include breakpoints(sm) {
+        min-width: 320px;
+    }
     min-height: 150px;
     padding: 30px;
     @include borderRadius(30px);
     border: 2px solid $sky1;
     margin: 30px auto;
     .usersContainer {
-        .githubImage {
+        .topHead {
+            margin-top: -20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
             .github {
-                margin-top: -20px;
                 margin-bottom: 10px;
                 display: block;
                 width: 50px;

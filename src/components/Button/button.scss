@@ -1,0 +1,27 @@
+@import '../../index.scss';
+@import '../../sass/_mixins.scss';
+
+.btn {
+    font-family: $Josefin_font;
+    border: none;
+    outline: none;
+    color: $white;
+    padding: 8px 16px;
+    font-size: 18px;
+    @include borderRadius(10px);
+    cursor: pointer;
+    opacity: 1;
+    @include transition(0.3s);
+    &:hover {
+        opacity: 0.7;
+    }
+    &.delete {
+        background-color: $red1;
+    }
+    &.edit {
+        background-color: $violet1;
+    }
+    &.add {
+        background-color: $green1;
+    }
+}

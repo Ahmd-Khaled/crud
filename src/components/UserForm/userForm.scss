@@ -1,0 +1,53 @@
+@import '../../index.scss';
+@import '../../sass/_mixins.scss';
+
+.userForm {
+    // color: $white;
+    background-color: #F0F0F0;
+    width: 500px;
+    height: 400px;
+    @include breakpoints(sm) {
+        width: 300px;
+    }
+    @include flexCenter;
+    @include borderRadius(30px 0px 30px);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+    position: relative;
+    .closeIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $red1;
+        color: $white;
+        padding: 3px 8px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .inputBox {
+            font-family: $Josefin_font;
+            .inputLabel {
+                display: block;
+                margin-bottom: 3px;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            .input {
+                width: 250px;
+                border: 1px solid #ced4da;
+                outline: 0;
+                background-color: $white;
+                padding: 6px 13px;
+                @include borderRadius(3px);
+                &::placeholder {
+                    font-family: $Josefin_font;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,14 @@
 import React from 'react';
+import { Button } from '..';
 import './user.scss';
 
 const User = ({ item, deleteUser }) => {
     const deleteHandler = () => {
         deleteUser(item.id);
+    };
+
+    const editHandler = () => {
+
     };
 
     return (
@@ -27,8 +32,10 @@ const User = ({ item, deleteUser }) => {
                         <span>{item.address}</span>
                     </li>
                 </ul>
-                <div className='btns'>
-                    <button className='delBtn' onClick={deleteHandler}>Delete</button>
+                <div className='btn-group'>
+                    {/* <button className='delBtn' onClick={deleteHandler}>Delete</button> */}
+                    <Button clickHandler={editHandler} btnClass='edit'>Edit</Button>
+                    <Button clickHandler={deleteHandler} btnClass='delete'>Delete</Button>
                 </div>
             </div>
         </div>
