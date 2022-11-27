@@ -1,0 +1,47 @@
+@import '../../index.scss';
+@import '../../sass/mixins';
+
+.InpBox {
+    width: 100%;
+
+    .InpWrapper {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid #ced4da;
+        @include borderRadius(18px);
+        background-color: $white;
+        height: 36px;
+        overflow: hidden;
+        .inpField {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            line-height: 22px;
+            padding: 6px 13px;
+            
+            // &:focus {
+            //     background-color: #fff;
+            //     border-color: rgba(19, 38, 77, 0.2);
+            //     outline: 0;
+            //     box-shadow: 0 0 0 3px rgb(19 38 77 / 13%);
+            // }
+        }
+        &:hover  {
+            background-color: #fff;
+            border-color: rgba(19, 38, 77, 0.2);
+            outline: 0;
+            box-shadow: 0 0 0 3px rgb(19 38 77 / 13%);
+        }
+        .closeIcon {
+            padding: 0px 16px;
+            cursor: pointer;
+            color: #777;
+            font-size: 20px;
+            &:hover {
+                color: $red1;
+            }
+        }
+    }
+}

@@ -1,3 +1,21 @@
+$body_color: #F5F7FA;
+$main_color: #3D464D;
+$text_color: #212529;
+$main_color-light: #8fa7b2;
+$light-dark: #48525a;
+$gray-light: #EBEDF0;
+$gray-light1: #828f99;
+$gray-light2: #6c757d;
+$gray: #A3A6AA;
+$yellow: #F5D331;
+$yellow-light: #F3C70E;
+$yellow-dark: #f5c000;
+$white: #FFFFFF;
+$green: #47ad24;
+$red: #e52e2e;
+$red2: #DD4545;
+$blue: #0b5be5;
+
 @mixin listReset {
     padding: 0;
     margin: 0;

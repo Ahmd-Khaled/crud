@@ -2,13 +2,13 @@ import React from 'react';
 import { Button } from '..';
 import './user.scss';
 
-const User = ({ item, deleteUser }) => {
+const User = ({ item, deleteUser, getUserData }) => {
     const deleteHandler = () => {
         deleteUser(item.id);
     };
 
     const editHandler = () => {
-
+        getUserData(item);
     };
 
     return (
