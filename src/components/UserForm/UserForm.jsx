@@ -31,7 +31,7 @@ const formInputs = [
     },
 ]
 
-const UserForm = ({ persons, setPersons, showFormHandler, saveUser, selectedUser }) => {
+const UserForm = ({ persons, setPersons, showFormHandler, saveUser, selectedUser, file }) => {
     const [input, setInput] = useState({ name: "", gender: "", phone: "", address: ""});
 
     useEffect(() => {
@@ -86,6 +86,15 @@ const UserForm = ({ persons, setPersons, showFormHandler, saveUser, selectedUser
                 ))}
                 <Button btnClass='add' btnType='submit'>Save User</Button>
             </form>
+            <div className='imgBox'>
+                <img
+                    src={file
+                        ? URL.createObjectURL(file)
+                        : '/imgs/no-image-icon-0.jpg'
+                    }
+                    alt=''
+                />
+            </div>
         </div>
     )
 }
